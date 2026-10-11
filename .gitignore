@@ -1,0 +1,9 @@
+# Temporary planning notes
+instructions.txt
+layout.txt
+
+# System & editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
