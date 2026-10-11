@@ -424,7 +424,101 @@
 
   <!-- Site Footer Landmark -->
   <footer class="site-footer" id="contact">
-    <!-- Footer content will live here -->
+    <div class="container footer-container">
+      
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand & Philosophy -->
+        <div class="footer-col footer-brand-col">
+          <a href="#home" class="brand-logo footer-logo" aria-label="Page and Pine Booksellers Home">
+            <svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            <div class="brand-text-group">
+              <span class="brand-name">Page &amp; Pine</span>
+              <span class="brand-sub">Booksellers</span>
+            </div>
+          </a>
+          <p class="footer-bio">
+            An independent brick-and-mortar sanctuary celebrating literature, author discussions, and the quiet joy of discovery in our neighborhood.
+          </p>
+          <div class="footer-socials" aria-label="Social links">
+            <a href="#contact" class="social-link">Instagram</a>
+            <span class="social-sep" aria-hidden="true">&bull;</span>
+            <a href="#contact" class="social-link">Goodreads</a>
+            <span class="social-sep" aria-hidden="true">&bull;</span>
+            <a href="#contact" class="social-link">Substack</a>
+          </div>
+        </div>
+
+        <!-- Column 2: Hours -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Store Hours</h3>
+          <ul class="hours-list">
+            <li>
+              <span class="day">Monday &ndash; Friday</span>
+              <span class="time">9:00 AM &ndash; 8:00 PM</span>
+            </li>
+            <li>
+              <span class="day">Saturday</span>
+              <span class="time">10:00 AM &ndash; 8:00 PM</span>
+            </li>
+            <li>
+              <span class="day">Sunday</span>
+              <span class="time">11:00 AM &ndash; 6:00 PM</span>
+            </li>
+          </ul>
+          <p class="hours-note">Coffee bar brews fresh 30 minutes before doors open daily.</p>
+        </div>
+
+        <!-- Column 3: Location & Contact -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Visit Us</h3>
+          <address class="contact-details">
+            <p class="contact-line">
+              <strong>Address:</strong><br>
+              142 Pine Street, Historic Quarter<br>
+              Portland, OR 97204
+            </p>
+            <p class="contact-line">
+              <strong>Phone:</strong><br>
+              <a href="tel:5035550182">(503) 555-0182</a>
+            </p>
+            <p class="contact-line">
+              <strong>Inquiries:</strong><br>
+              <a href="mailto:hello@pageandpinebooks.com">hello@pageandpinebooks.com</a>
+            </p>
+          </address>
+        </div>
+
+        <!-- Column 4: Newsletter / Dispatch -->
+        <div class="footer-col">
+          <h3 class="footer-heading">The Monthly Dispatch</h3>
+          <p class="newsletter-desc">
+            Handwritten essays, early access to author events, and curated reading lists delivered once a month.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to The Monthly Dispatch!');">
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+            <div class="newsletter-input-group">
+              <input type="email" id="newsletter-email" placeholder="reader@example.com" required class="newsletter-input">
+              <button type="submit" class="btn btn-primary newsletter-btn">Join</button>
+            </div>
+            <span class="form-disclaimer">Zero algorithms or spam. Unsubscribe anytime.</span>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar Landmark -->
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Page &amp; Pine Booksellers. Handcrafted with semantic HTML &amp; CSS.</p>
+        <div class="footer-actions">
+          <a href="#top" class="back-to-top">Back to top &uarr;</a>
+        </div>
+      </div>
+
+    </div>
   </footer>
 
 </body>

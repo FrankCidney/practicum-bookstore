@@ -752,6 +752,225 @@ button {
   flex-shrink: 0;
 }
 
+/* --------------------------------------------------------------------------
+   10. Site Footer (Grid & Flexbox)
+   -------------------------------------------------------------------------- */
+.site-footer {
+  background-color: #211f1d;
+  color: #ece8e1;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.3fr;
+  gap: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.footer-logo .brand-icon {
+  color: var(--color-accent);
+}
+
+.footer-logo .brand-sub {
+  color: #a49e95;
+}
+
+.footer-bio {
+  color: #a49e95;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.social-link {
+  color: #ece8e1;
+}
+
+.social-link:hover {
+  color: var(--color-accent);
+}
+
+.social-sep {
+  color: #6a645d;
+}
+
+.footer-heading {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 1.25rem 0;
+  letter-spacing: 0.02em;
+}
+
+/* Hours List (Flexbox Rows) */
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  border-bottom: 1px dashed #3a3734;
+  padding-bottom: 0.4rem;
+}
+
+.hours-list .day {
+  color: #ece8e1;
+  font-weight: 500;
+}
+
+.hours-list .time {
+  color: #a49e95;
+  font-variant-numeric: tabular-nums;
+}
+
+.hours-note {
+  font-size: 0.8rem;
+  color: #8c8479;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Contact Details */
+.contact-details {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  font-size: 0.88rem;
+  color: #a49e95;
+  line-height: 1.55;
+}
+
+.contact-details strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contact-details a {
+  color: #ece8e1;
+}
+
+.contact-details a:hover {
+  color: var(--color-accent);
+}
+
+/* Newsletter Form */
+.newsletter-desc {
+  font-size: 0.88rem;
+  color: #a49e95;
+  line-height: 1.55;
+  margin: 0 0 1.25rem 0;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.newsletter-input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletter-input {
+  flex-grow: 1;
+  min-width: 0;
+  padding: 0.75rem 1rem;
+  background-color: #2e2b28;
+  border: 1px solid #433f3b;
+  border-radius: var(--radius-sm);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.88rem;
+  transition: border-color var(--transition-fast);
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.newsletter-btn {
+  padding: 0.75rem 1.25rem;
+  white-space: nowrap;
+}
+
+.form-disclaimer {
+  font-size: 0.75rem;
+  color: #7f786f;
+}
+
+/* Footer Bottom Bar (Flexbox) */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid #363330;
+  font-size: 0.85rem;
+  color: #7f786f;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright {
+  margin: 0;
+}
+
+.back-to-top {
+  color: #ece8e1;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.back-to-top:hover {
+  color: var(--color-accent);
+}
+
+/* Accessibility Utility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
 
 
 
