@@ -1,38 +1,51 @@
 # Page & Pine Booksellers
 
-An independent bookstore website built with semantic HTML5 and modern responsive CSS3.
+An independent bookstore storefront built with React, Vite, and Tailwind CSS.
 
 ## Overview
 
-**Page & Pine Booksellers** is a single-page storefront showcasing:
-- **Curated Book Catalog**: Fiction, Nonfiction, and Bookseller Staff Picks.
+**Page & Pine Booksellers** is a responsive single-page storefront showcasing:
+- **Curated Book Catalog**: Interactive category filtering for Fiction, Nonfiction, and Bookseller Staff Picks, with per-item quantity steppers.
 - **Community Events**: Calendar of book clubs, author readings, and writing workshops.
-- **Editorial Storefront**: Inspired by modern boutique bookstore design with warm tones, literary typography, and responsive grid layouts.
+- **Editorial Storefront**: Inspired by modern boutique bookstore design with warm tones, literary typography, and mobile-first responsive layouts.
 
 ## Built With
 
-- **HTML5**: Semantic landmark elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
-- **CSS3**: Custom properties (CSS variables), CSS Grid, and Flexbox
-- **Responsive Design**: Mobile-friendly media queries for phones, tablets, and desktops
+- **React 19 & Vite**: Component-based UI and fast module bundling
+- **Tailwind CSS v4**: Mobile-first utility styling and custom design tokens
+- **JavaScript (ES6+)**: Centralized data structures and React `useState` state management
 
 ## File Structure
 
 ```text
 practicum-bookstore/
-├── index.html          # Main HTML structure
-├── styles.css          # CSS styles, grid, flexbox, and responsive rules
-├── images/             # Vector SVG book cover illustrations
-└── README.md           # Project documentation
+├── public/
+│   └── images/               # Vector SVG book cover illustrations
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx        # Sticky navigation bar and bag indicator
+│   │   ├── Hero.jsx          # Welcome banner and store highlights
+│   │   ├── Catalog.jsx       # Category filter (useState) and book grid
+│   │   ├── BookCard.jsx      # Individual book card component
+│   │   ├── QuantityStepper.jsx # Controlled quantity stepper component
+│   │   ├── Events.jsx        # Events grid and parlor reservation banner
+│   │   └── Footer.jsx        # Store hours, contact info, and newsletter form
+│   ├── data/
+│   │   └── books.js          # Centralized book and event data arrays
+│   ├── App.jsx               # Root application component
+│   ├── main.jsx              # Application entry point
+│   └── index.css             # Tailwind directives and custom theme tokens
+├── index.html
+├── package.json
+└── vite.config.js
 ```
 
-## How to View the Project
+## How to Run Locally
 
-Open `index.html` directly in any modern web browser:
 ```bash
-# On Linux
-xdg-open index.html
+# Install dependencies
+npm install
 
-# Or start a simple local server
-python3 -m http.server 8000
+# Start the development server
+npm run dev
 ```
-Then visit `http://localhost:8000` in your browser.
