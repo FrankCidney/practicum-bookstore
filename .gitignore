@@ -2,6 +2,12 @@
 instructions.txt
 layout.txt
 
+# Dependencies & build output
+node_modules/
+dist/
+dist-ssr/
+*.local
+
 # System & editor files
 .DS_Store
 Thumbs.db
